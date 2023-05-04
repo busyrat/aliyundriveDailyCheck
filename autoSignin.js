@@ -72,7 +72,7 @@ function sign_in(access_token, remarks) {
         v => v.status === 'normal' && !v.isReward
       )
 
-      if (rewards.length) {
+      if (false && rewards.length) {
         for await (reward of rewards) {
           const signInDay = reward.day
           try {
